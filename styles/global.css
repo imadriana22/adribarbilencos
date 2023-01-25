@@ -74,6 +74,12 @@ nav a:hover {
   top: 7vh;
 }
 
+@media screen and (max-width: 600px) {
+  #logo {
+    height: 5vh;
+  }
+}
+
 @-webkit-keyframes scarves {
   0% {
     background-image: url(assets/lenco1.png);
@@ -133,6 +139,12 @@ nav a:hover {
           animation: scarves 30s ease-in-out infinite;
 }
 
+@media screen and (max-width: 600px) {
+  #hero {
+    height: 54vh;
+  }
+}
+
 #buy_destaques {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +164,12 @@ nav a:hover {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 600px) {
+  #buy_destaques {
+    width: 100%;
+  }
+}
+
 .destaque {
   width: 25%;
   margin: 50px 15px;
@@ -167,11 +185,24 @@ nav a:hover {
           align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .destaque {
+    width: 40%;
+  }
+}
+
 .destaque img {
   width: 200px;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .destaque img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .destaque p {
@@ -288,5 +319,11 @@ footer div a:hover {
   font-size: 30px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .citacao {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=global.css.map */

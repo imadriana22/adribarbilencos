@@ -59,6 +59,11 @@ nav {
     width: auto;
     position: fixed;
     top: 7vh;
+
+    @media screen and (max-width: 600px) {
+        height: 5vh;
+    }
+
 }
 
 @keyframes scarves {
@@ -101,6 +106,11 @@ nav {
     background-position: center;
 
     animation: scarves 30s ease-in-out infinite;
+
+
+    @media screen and (max-width: 600px) {
+        height: 54vh;
+    }
 }
 
 #buy_destaques {
@@ -112,7 +122,13 @@ nav {
     width: 60%;
     justify-content: space-evenly;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
 }
+
+
 
 .destaque {
     width: 25%;
@@ -122,10 +138,19 @@ nav {
     flex-direction: column;
     align-items: center;
 
+    @media screen and (max-width: 600px) {
+        width: 40%;
+    }
+
     img {
         width: 200px;
         height: 200px;
         object-fit: cover;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            height: auto;
+        }
     }
 
     p {
@@ -221,4 +246,8 @@ footer {
     font-size: 30px;
     margin-bottom: 30px;
     text-align: center;
+
+    @media screen and (max-width: 600px) {
+        font-size: 20px;
+    }
 }
